@@ -7,10 +7,10 @@ Learning Workspace を Windows のデスクトップに常駐させて操作す�
 PowerShell を開いて、次の 1 行を貼り付けて Enter を押します。ブラウザを通さないので、「危険なファイル」の警告は出ません。
 
 ```powershell
-irm https://raw.githubusercontent.com/oyuke/learning-workspace-gadget/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/oyuke/learning-workspace-gadget/540a160dde3027015f461ec08d6c88d8e49abfbe/install.ps1 | iex
 ```
 
-最新版のダウンロード、チェックサムの確認、インストーラーの起動までを行います。
+最新版のダウンロード、署名とハッシュの検証、インストーラーの起動までを行います。URL の英数字40桁はこのリポジトリのコミットで、あとから中身を差し替えられません。リリースに付く `release-manifest.json` の署名と、EXE のハッシュ・サイズがすべて一致したときだけ起動し、過去の版への巻き戻しは拒否します。検証に失敗したときは、何もインストールしません。
 
 ## ブラウザからインストールする場合
 
